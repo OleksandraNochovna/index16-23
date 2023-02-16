@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Oleksandra Nochovna</title>
+</head>
+<body>
+<h1> Zewnętrzny arkusz stylów</h1>
+<font face="Arial" size="3">
+<OL TYPE=1 START=1>
+<LI> Składnia teoretyczna &xrarr; otoczony ramką (może być tabela jedno komórkowa, 
+konieczne wcięcia).
+<LI> Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS?
+<LI> Jak jest najprostsza forma wstawiania stylu zewnętrznego &xrarr; otoczony ramką (może 
+być tabela jedno komórkowa?
+<LI> Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad 
+musi być zachowana przy większej ilości dołączanych styli?
+<LI> Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.
+<LI> Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?
+<LI> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS? 
+<LI> Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?
+<LI> Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?
+<LI> Uwagi na temat pisania w CSS. 
+<br><br><br>
+<font face="Arial" size="3">
+<OL TYPE=1 START=1>
+<br><LI><table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;selektor style="nasze style""&#62;<br>
+&nbsp &nbsp &nbsp &nbsp (...)<br>
+&nbsp &nbsp &nbsp &nbsp &#60;link rel="Stylesheet" type="text/css" href="style.css" /&#62;<br>
+&nbsp &nbsp &nbsp &nbsp (...)<br>
+&#60;/selektor&#62;</p>
+</td>
+</tr>
+</table><br><br><br><br><br><br>
+<br><LI>Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu.
+(sekcja<b> head</b> )
+<br><br><LI><table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;link rel="Stylesheet" type="text/css" href="style.css" /&#62;<br>
+</td>
+</tr>
+</table><br><br>
+<LI>Można dołączyć <b><u>dowolną liczbę </b></u>zewnętrznych arkuszy stylów 
+- każdy jako osobny element <link rel="Stylesheet" />. 
+<br><br><LI>
+W przypadku <b><u>konfliktów</b></u>, ważniejsze będą deklaracje z arkusza dołączonego później.
+<br><br><LI>Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i 
+edytowania wystarczy zwykły edytor tekst.
+<br><br><LI>Można się posłużyć specjalnym <b>edytorem CSS. </b>
+<br><br><LI>Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem stylów musi mieć 
+rozszerzenie *<b>.css</b>
+<br><br><LI><u>Zalety zewnętrznego arkusza styli:</u>
+<OL TYPE=1 START=1>
+<LI>wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+<LI>jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
+konieczności zmiany każdej strony osobno. 
+<br><br><LI>Uwagi na temat zewnętrznych CSS:<br>
+<UL TYPE=disc>
+<LI>Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu.
+(sekcja<b> head</b> )
+<LI>można dołączyć <b><u>dowolną liczbę </b></u>zewnętrznych arkuszy stylów 
+- każdy jako osobny element <link rel="Stylesheet" />. 
+<LI>W przypadku <b><u>konfliktów</b></u>, ważniejsze będą deklaracje z arkusza dołączonego później.
+<LI>Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i 
+edytowania wystarczy zwykły edytor tekst. 
+<LI>Można się posłużyć specjalnym <b>edytorem CSS. </b>
+<LI>Należy jedynie pamiętać, że plik będący zewnętrznym arkuszem stylów musi mieć 
+rozszerzenie *<b>.css</b>
+</UL>
+</body>
+</html>
+
+

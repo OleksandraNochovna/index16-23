@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Oleksandra Nochovna</title>
+</head>
+<body>
+<p><center> <font color="black" size="6" face="Times New Roman"><b>Sposoby podłączania styli do strony (skrócone zestawienie).</b></font> </p> 
+<p align="left"><font size="5"><b>1)<u>Zewnętrzny</u> arkusz stylów.</b></font></p> 
+<table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p>&#60;head&#62;<br>
+&nbsp &nbsp &#60;link rel="Stylesheet" type="text/css" href="style.css" /&#62;<br>
+&#60;/head&#62;<br></p>
+</td>
+</tr>
+</table>
+<br><br><br>
+<p align="left"><font size="5"><b>2)Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.</b></font></p> 
+<table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p>&#60;selektor style="cecha1: wartość1; cecha2: wartość2..."&#62;... &#60;/selektor&#62;</p>
+</td>
+</tr>
+</table>
+<br>
+<p align="left"><font size="5"><b>3)<u>Wewnętrzny</u> arkusz stylów.</b></font></p> 
+<table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;head&#62;<br>
+ &nbsp &nbsp <b> &#60;style type="text/css"&#62;</b><br>
+&nbsp &nbsp &nbsp &nbsp selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+&nbsp &nbsp &nbsp &nbsp selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+ &nbsp &nbsp <b> &#60;/style &#62;</b><br>
+&#60;/head&#62;</p><br>
+</td>
+</tr>
+</table><br><br><br><br><br><br><br><br>
+<p align="left"><font size="5"><b>4)<u>Alternatywny</u> arkusz stylów.</b></font></p> 
+<table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;head&#62;<br>
+&nbsp &nbsp &nbsp &nbsp selektor1 &#60; link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&#62; <br>
+&nbsp &nbsp &nbsp &nbsp selektor1 &#60; ink rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&#62; <br>
+&nbsp &nbsp &nbsp &nbsp selektor1 &#60; link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&#62; <br>
+&#60;/head&#62;</p>
+</td>
+</tr>
+</table><br><br><br><br><br><br><br><br>
+<p align="left"><font size="5"><b>5)<u>Import</u> arkusza stylów.</b></font></p> 
+<table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;style type="text/css"&#62;<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp @import url(adres zewnętrznego arkusza stylów);<br>
+&#60;/style&#62;</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

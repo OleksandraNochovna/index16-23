@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Oleksandra Nochovna</title>
+</head>
+<body>
+<h1><font face="Arial"> Wewnętrzny arkusz stylów:
+ </h1>
+<font size="3">
+<OL TYPE=1 START=1>
+<LI>gdzie jest wstawiany,
+<br><LI>składnia teoretyczna (w ramce, konieczne wcięcia),
+<br><LI>jakie mogą być selektory,
+<br><LI>jakie mogą być cechy i wartości.
+<br><br><br>
+<OL TYPE=1 START=1>
+<br><LI><u>Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami &#60;head&#62; a 
+&#60;/head&#62;).</u> Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, 
+występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż 
+domyślne). 
+<br><br><LI><table border="1" bordercolor="black" align="left" width="80%"> 
+<tr>
+<td colspan="4" >
+<p> &#60;head&#62;<br>
+&nbsp &nbsp &nbsp &nbsp (...)<br>
+&nbsp &nbsp <b>&#60;style type="text/css"&#62;<br>
+&nbsp &nbsp /&#8727; &#60;![CDATA[ &#8727;/<br></b>
+ &nbsp &nbsp &nbsp &nbsp selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+ &nbsp &nbsp &nbsp &nbsp  selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+&nbsp &nbsp &nbsp &nbsp  (...)<br>
+&nbsp &nbsp <b>/&#8727; ]]&#62; &#8727;/<br>
+&nbsp &nbsp &#60;/style&#62;<br></b>
+&nbsp &nbsp &nbsp &nbsp  (...)<br>
+&#60;/head&#62;</p>
+</td>
+</tr>
+</table><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<LI> <b>Selektorem </b>może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka 
+tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi 
+znacznikami, nadajemy atrybuty formatowania opisane w arkuszu.
+<br><br><LI>Jako <b>"cecha" </b>(w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty 
+formatowania nam chodzi (opisane w kolejnych rozdziałach).<br>
+Natomiast jako wyraz <b>"wartość"</b> wpisujemy dokładną wartość atrybutu.<br>
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy 
+rozdzielone średnikami
+</font>
+</body>
+</html>
